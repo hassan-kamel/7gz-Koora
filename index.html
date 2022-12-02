@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="p-2">
+
+
+    <div id="popup"
+        class="hidden fixed top-[-10px] w-[100vw] h-[100vh] flex items-center bg-gradient-to-r from-green-50 to-blue-50 p-3">
+
+        <div id="add-close" class="absolute top-[10%] bg-gradient-to-r from-orange-500 to-yellow-500 p-2 rounded-full">
+            <svg class="fill-white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path
+                    d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z" />
+            </svg>
+        </div>
+        <div class="rounded-lg bg-white  shadow-2xl container max-w-screen-xs  mx-auto">
+
+
+
+            <div id="error" class="hidden text-right mb-2 bg-red-200 border-red-600 text-red-600 border-r-4 p-4"
+                role="alert">
+                <p class="font-bold">
+                    خد بالك
+                </p>
+                <p>
+                    الفئة دي اتملت او الاسم فاضي
+                </p>
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="mx-auto text-right">
+                    <div>
+                        <label for="player" class="text-sm font-medium"> الاعب</label>
+
+                        <div class="relative my-2 text-right">
+                            <input type="text" id="player"
+                                class="w-full rounded-lg border-cyan-200 p-4  text-sm shadow-sm text-right"
+                                placeholder="دخل الاسم" />
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <label class="text-gray-700 text-right" for="class">
+                            درجة الحرفنه
+                            <select id="class"
+                                class="text-right my-2 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                                name="class">
+                                <option value="">
+                                    اختار الفئة
+                                </option>
+                                <option value="A">
+                                    فئة اولي
+                                </option>
+                                <option value="B">
+                                    فئة ثانية
+                                </option>
+                                <option value="C">
+                                    فئة ثالثة
+                                </option>
+                                <option value="D">
+                                    فئة رابعة
+                                </option>
+                                <option value="E">
+                                    فئة خامسة
+                                </option>
+
+                            </select>
+                        </label>
+
+                    </div>
+
+                    <button id="adding"
+                        class=" w-full rounded-lg bg-gradient-to-r from-orange-500 to-yellow-500  px-5 py-3 text-sm font-medium text-white">
+                        ضيف
+                    </button>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container max-w-screen-xs  mx-auto">
+        <nav class=" mx-auto flex max-w-3xl items-center justify-between p-4">
+            <span class="px-4 py-2  text-base rounded-md text-green-600  bg-green-50">
+
+                تقسيمه
+            </span>
+
+            <!-- Base -->
+
+            <button id="add-player"
+                class="inline-block p-3  hover:bg-green-600 text-white focus:outline-none  bg-indigo-500 flex">
+                اضافة لاعب
+            </button>
+
+        </nav>
+        <div id="classes" class="classes flex items-center flex-row-reverse gap-2  flex-wrap">
+
+        </div>
+
+
+
+
+
+        <div class="genterate my-5 w-full text-center">
+            <button
+                class="py-2 px-4  bg-gradient-to-r from-green-400 to-blue-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2">طلع
+                الفرق</button>
+        </div>
+
+
+
+        <div id="teams" class="classes my-3 flex items-center flex-row-reverse gap-2">
+            <ul class="rounded-md border border-gray-100 bg-white shadow-lg flex flex-col  gap-3 p-2 text-right">
+                <span class="px-4 py-2  text-base text-cyan-600  bg-cyan-50">الفريق الاول</span>
+                <li>احمد</li>
+                <li>احمد</li>
+                <li>احمد</li>
+            </ul>
+            <ul class="rounded-md border border-gray-100 bg-white shadow-lg flex flex-col  gap-3 p-2 text-right">
+                <span class="px-4 py-2  text-base text-cyan-600  bg-cyan-50">الفريق الثاني</span>
+                <li>احمد</li>
+                <li>احمد</li>
+                <li>احمد</li>
+            </ul>
+            <ul class="rounded-md border border-gray-100 bg-white shadow-lg flex flex-col  gap-3 p-2 text-right">
+                <span class="px-4 py-2  text-base text-cyan-600  bg-cyan-50">الفريق الثالث</span>
+                <li>احمد</li>
+                <li>احمد</li>
+                <li>احمد</li>
+            </ul>
+
+        </div>
+
+
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js"></script>
+</body>
+
+
+
+</html>
